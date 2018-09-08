@@ -22,13 +22,11 @@
 	grid-gap: 0;
 }
 
-.displayBox div {
-	background-color: red;
-	height: 2em;
-}
 
-.displayBox div:nth-child(odd) {
-	background-color: blue;
+
+img {
+	height: 100%;
+	width: 100%;
 }
 
 #promoVid {
