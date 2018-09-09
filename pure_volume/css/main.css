@@ -15,3 +15,56 @@
 	height: 0;
 	clear: both;
 }
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.vidArea {
+	width: 100%;
+	grid-column: span 9;
+}
+
+.bannerVid {
+	width: 100%;
+}
+
+.vidControls {
+	display: none;
+	position: absolute;
+	top: 48vw;
+	opacity: 0.0;
+	transition: all 3s ease;
+}
+
+.grid:hover .vidControls {
+	display: block;
+	opacity: .6;
+}
+
+.vidBut {
+	height: 16px;
+	width: 16px;
+}
+
+.pause {
+	float: left;
+	margin-right: 86vw;
+	margin-left: 2vw;
+	transition: all 3s ease;
+}
+
+.play {
+	float: left;
+	margin-right: 85vw;
+	margin-left: 2vw;
+}
+
+.mute {
+	float: right;
+}
+
+.unmute {
+	float: right;
+}
