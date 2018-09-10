@@ -178,3 +178,9 @@ img {
 	height: 100%;
 
 }
+
+/* Article Page */
+
+#articleBody{
+	background-color: white;
+}
