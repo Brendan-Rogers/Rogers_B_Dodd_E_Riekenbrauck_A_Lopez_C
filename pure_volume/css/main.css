@@ -4,7 +4,7 @@
 /*this class will hide elements on our page*/
 .hidden
 {
-		display: none;
+	display: none;
 }
 
 .clearfix:after
@@ -16,12 +16,22 @@
 	clear: both;
 }
 
-.grid {
+.displayBox {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(9, 1fr);
+	grid-gap: 0;
 }
 
-.vidArea {
+
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+/* VIDEO */
+
+.promoVid {
 	width: 100%;
 	grid-column: span 9;
 }
@@ -30,34 +40,34 @@
 	width: 100%;
 }
 
+
 .vidControls {
 	display: none;
 	position: absolute;
-	top: 48vw;
+	top: 60vw;
 	opacity: 0.0;
 	transition: all 3s ease;
 }
 
-.grid:hover .vidControls {
+.vid:hover .vidControls {
 	display: block;
 	opacity: .6;
 }
 
 .vidBut {
-	height: 16px;
-	width: 16px;
+	height: 14px;
+	width: 14px;
 }
 
 .pause {
 	float: left;
-	margin-right: 86vw;
+	margin-right: 82vw;
 	margin-left: 2vw;
-	transition: all 3s ease;
 }
 
 .play {
 	float: left;
-	margin-right: 85vw;
+	margin-right: 82vw;
 	margin-left: 2vw;
 }
 
@@ -67,4 +77,52 @@
 
 .unmute {
 	float: right;
+}
+
+/* END OF VIDEO */
+
+#box1 {
+	grid-column: 1 / span 4;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+#box2 {
+	grid-column: 1 / span 2;
+	grid-row-start: 4;
+}
+#box3 {
+	grid-column: 3 / span 2;
+	grid-row-start: 4;
+}
+#box4 {
+	grid-column: 1 / span 4;
+	grid-row: 5 / span 2;
+}
+#box5 {
+	grid-column: 1 /  span 4;
+	grid-row: 7;
+}
+#box6 {
+	grid-column: 5 / span 2;
+	grid-row: 2;
+}
+#box7 {
+	grid-column: 7 / span 3;
+	grid-row: 2;
+}
+#box8 {
+	grid-column: 5 / span 5;
+	grid-row: 3 / span 3;
+}
+#box9 {
+	grid-column: 5 / span 3;
+	grid-row: 6;
+}
+#box10 {
+	grid-column: 5 / span 3;
+	grid-row: 7;
+}
+#box11 {
+	grid-column: 8 / span 2;
+	grid-row: 6 / span 2;
 }
