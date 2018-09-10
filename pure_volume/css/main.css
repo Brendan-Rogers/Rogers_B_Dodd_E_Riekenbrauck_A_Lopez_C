@@ -192,7 +192,7 @@ img {
 #articleBody h1, h2, h3, p{
 	font-family: Arial;
 	font-family: Arial, sans-serif, serif;
-	color: #000;
+	color: #16161d;
 }
 
 #header{
@@ -242,7 +242,8 @@ img {
 	font-size: 20px;
 	text-align: left;
 	line-height: 36px;
-	margin-left: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
 }
 
 #blurbBox{
@@ -321,7 +322,7 @@ img {
 .socialMedia{
 	width: 120px;
 	height: 120px;
-	margin-left: 40px;
+	margin-left: 30px;
 	margin-top: 30px;
 }
 
