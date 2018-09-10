@@ -182,5 +182,152 @@ img {
 /* Article Page */
 
 #articleBody{
-	background-color: white;
+	background-color: #f7f7f7;
+	display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+
+#articleBody h1, h2, h3, p{
+	font-family: Arial;
+	font-family: Arial, sans-serif, serif;
+	color: #000;
+}
+
+#header{
+	grid-column: 1 / span 3;
+	background-color: #000000;
+	height: 85px;
+	margin-bottom: 15px;
+}
+
+#pureVolumeLogo{
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#contentMainTitle{
+	background-image: url('../images/article_images/mobile/article/drake_banner_article.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 35px;
+}
+
+#contentMainTitle h1{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 15px;
+	margin-right: 55px;
+	padding-top: 37px;
+}
+
+#contentMainTitle h3{
+	font-family: "Arial Narrow", Arial, sans-serif;;
+	font-size: 17px;
+	text-align: left;
+	margin-left: 20px;
+	padding-top: 12px;
+	padding-bottom: 20px;
+}
+
+#articleContent{
+	grid-column: 1 / span 3;
+}
+
+#articleContent p{
+	font-size: 20px;
+	text-align: left;
+	line-height: 36px;
+	margin-left: 20px;
+}
+
+#blurbBox{
+	position: relative;
+}
+
+#greyBox{
+	position: absolute;
+	width: 230px;
+	height: 120px;
+	background-color: #c8c8c8;
+	top: 0;
+	right: 5%;
+	z-index: -1;
+}
+
+.contentBlurb{
+	font-family: "Tw Cen MT Condensed", Arial, sans-serif;;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 36px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
+.contentHeading{
+	font-family: "Tw Cen MT Condensed", Arial, sans-serif;;
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.contentAd{
+	width: 100%;
+	height: auto;
+	margin-top: 60px;
+}
+
+.imageHeader{
+	width: 100%;
+	height: auto;
+	margin-top: 60px;
+}
+
+.footer{
+	grid-column: 1 / span 3;
+	display: block;
+	background-color: #000;
+	height: 185px;
+	margin-top: 70px;
+}
+
+.footer ul{
+	float: right;
+	text-align: right;
+	margin-right: 16px;
+	margin-top: 32px;
+}
+
+.footer ul li{
+	list-style-type: none;
+}
+
+.footer ul li a{
+	font-family: "Tw Cen MT", Arial, sans-serif;
+	font-size: 24px;
+	color: #f7f7f7;
+	text-decoration: none;
+}
+
+.socialMedia{
+	width: 120px;
+	height: 120px;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+.socialIcon{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 5px;
 }
