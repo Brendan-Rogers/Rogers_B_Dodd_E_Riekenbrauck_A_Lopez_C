@@ -46,6 +46,4 @@
   play.addEventListener('click', pausePlay);
   unmute.addEventListener('click', muted);
   mute.addEventListener('click', muted);
-
-
 })();
