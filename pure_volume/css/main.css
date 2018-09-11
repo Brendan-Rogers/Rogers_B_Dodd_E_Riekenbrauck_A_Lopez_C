@@ -141,6 +141,7 @@ img {
 @media screen and (min-width: 1024px) {
 	.displayBox {
 		grid-template-columns: repeat(9, 1fr);
+		grid-template-rows: auto;
 		grid-auto-rows: auto;
 	}
 	.displayBox div {
