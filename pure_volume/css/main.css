@@ -134,7 +134,7 @@ img {
 	.displayBox div {
 		position: relative;
 		display: grid;
-		
+
 		grid-template-columns: 1fr 8fr 1fr;
 		grid-template-rows: 3fr 1fr 1fr;
 	}
@@ -159,7 +159,7 @@ img {
 
 		opacity: 0;
 		transition: opacity 400ms linear;
-		
+
 		z-index: 1;
 	}
 	.articleSub {
@@ -176,7 +176,7 @@ img {
 		opacity: 0;
 		transition: opacity 400ms linear;
 
-		z-index: 1;		
+		z-index: 1;
 	}
 	.artLink:hover .articleHead {
 		opacity: 1;
@@ -289,7 +289,7 @@ img {
 	color: #16161d;
 }
 
-#header{
+#mobileHeader{
 	grid-column: 1 / span 3;
 	background-color: #000000;
 	height: 85px;
