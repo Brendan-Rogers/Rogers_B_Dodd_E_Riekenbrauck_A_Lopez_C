@@ -202,6 +202,66 @@ img {
 	margin-bottom: 15px;
 }
 
+#mobileNav{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 65px;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	z-index: 50;
+	 display: grid;
+	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	 grid-template-rows: 1fr 1fr;
+	 grid-column-gap: 0;
+	 grid-row-gap: 0;
+	 justify-content: center;
+	 align-items: stretch;
+
+}
+
+#mobileNav p{
+	font-size: 9px;
+	color: #f7f7f7;
+	text-align: center;
+}
+
+button{
+	width: 100%;
+	height: 35px;
+	background-color: #000;
+	font-size: 9px;
+	color: #f7f7f7;
+	border: none;
+	outline-style: none;
+}
+
+#homeBut{
+	grid-column: 1 / 2;
+	margin: 7px 0 4px 0 ;
+}
+
+#cultureBut{
+	grid-column: 2 / 3;
+	margin: 7px 0 4px 0 ;
+}
+
+#musicBut{
+	grid-column: 3 / 4;
+	margin: 7px 0 4px 0 ;
+}
+
+#lifebut{
+	grid-column: 4 / 5;
+	margin: 7px 0 4px 0 ;
+}
+
+#searchBut{
+ grid-column: 5 / 6;
+ margin: 7px 0 4px 0 ;
+}
+
 #pureVolumeLogo{
 	display: block;
 	width: 75%;
@@ -241,7 +301,7 @@ img {
 #articleContent p{
 	font-size: 20px;
 	text-align: left;
-	line-height: 36px;
+	line-height: 30px;
 	padding-left: 20px;
 	padding-right: 10px;
 }
@@ -299,6 +359,7 @@ img {
 	background-color: #000;
 	height: 185px;
 	margin-top: 70px;
+	padding-bottom: 45px;
 }
 
 .footer ul{
