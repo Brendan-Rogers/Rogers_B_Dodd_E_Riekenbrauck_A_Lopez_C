@@ -107,6 +107,15 @@ body {
 }
 .artImg {
 	width: 100%;
+
+	height: auto;
+
+	overflow: hidden;
+}
+
+img {
+	width: auto;
+	height: 100%;
 }
 /*END OF INDEX MOBILE*/
 
@@ -267,7 +276,7 @@ body {
 
 /* ARTICLE PAGE */
 #articleBody{
-	background-color: #f7f7f7;
+	background-color: #ffffff;
 	display: grid;
     grid-template-columns: 1fr 7fr 1fr;
     grid-template-rows: 1fr;
@@ -306,7 +315,7 @@ body {
 }
 #mobileNav p{
 	font-size: 9px;
-	color: #f7f7f7;
+	color: #ffffff;
 	text-align: center;
 }
 button{
@@ -314,7 +323,7 @@ button{
 	height: 35px;
 	background-color: #000;
 	font-size: 9px;
-	color: #f7f7f7;
+	color: #ffffff;
 	border: none;
 	outline-style: none;
 }
@@ -344,6 +353,19 @@ button{
 	margin: 0 auto;
 	padding: 0;
 }
+
+#articleContent{
+	grid-column: 1 / span 3;
+}
+
+#articleContent p{
+	font-size: 16px;
+	text-align: left;
+	line-height: 28px;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
 #contentMainTitle{
 	background-image: url('../images/article_images/mobile/article/drake_banner_article.png');
 	background-size: cover;
@@ -363,9 +385,10 @@ button{
 	font-size: 17px;
 	text-align: left;
 	margin-left: 20px;
-	padding-top: 12px;
+	margin-top: 12px;
 	padding-bottom: 20px;
 }
+
 #articleContent{
 	grid-column: 1 / span 3;
 }
@@ -403,14 +426,14 @@ button{
 	font-family: "Tw Cen MT Condensed", Arial, sans-serif;;
 	font-size: 36px;
 	font-weight: bold;
-	margin-top: 20px;
+	padding-top: 20px;
 	margin-bottom: 35px;
 	text-align: center;
 }
 .contentAd{
 	width: 100%;
 	height: auto;
-	margin-top: 60px;
+	padding-top: 50px;
 }
 .imageHeader{
 	width: 100%;
@@ -457,4 +480,98 @@ button{
 	float: left;
 	margin: 5px;
 }
+
+
+/* Article Media Queries */
+
+@media screen and (min-width: 490px){
+
+	#greyBox{
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+
+	#mobileHeader{
+		display: none;
+	}
+
+	#articleContent{
+		grid-column: 1 / span 3;
+
+		display: inline-grid;
+	    grid-template-columns: 1fr 2fr 1fr;
+	    grid-template-rows: 1fr;
+	    grid-gap: 0;
+	}
+
+	.articleContentBackground{
+		background-color: #f7f7f7;
+		grid-column: 1 / span 3;
+
+		display: inline-grid;
+	    grid-template-columns: 1fr 2fr 1fr;
+	    grid-template-rows: 1fr;
+	    grid-gap: 0;
+	}
+
+	#contentMainTitle{
+		grid-column: 1 / span 3;
+		margin-left: 145px;
+		margin-right: 145px;
+	}
+
+	#contentMainTitle h1{
+		font-size: 60px;
+		text-align: left;
+		padding: 230px 165px 25px 165px;
+	}
+
+	#contentMainTitle h3{
+		font-size: 35px;
+		padding-left: 165px;
+		padding-bottom: 100px;
+	}
+
+	#contentMainTitle p{
+		margin-left: 215px;
+		margin-right: 215px;
+	}
+
+	.contentText{
+		grid-column: 2 / 3;
+		font-size: 25px;
+		line-height: 45px;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 15px;
+	}
+
+	.contentHeading{
+		grid-column: 2 / 3;
+		text-align: left;
+		padding-left: 5%;
+	}
+
+	#blurbBox{
+		grid-column: 2/3;
+	}
+
+	.contentBlurb{
+		text-align: center;
+		width: 600px;
+	}
+
+	.imageHeader{
+		display: none;
+	}
+
+	.contentAd{
+		grid-column: 2 / 3;
+	}
+
+}
+
 /*END OF ARTICLE PAGE*/
