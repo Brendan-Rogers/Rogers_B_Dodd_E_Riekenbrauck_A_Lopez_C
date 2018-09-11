@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-font-family: 'Tw Cen MT Condensed';
-font-style: normal;
-font-weight: normal;
-src: local('Tw Cen MT Condensed'), url('TCCM____.woff') format('woff');
+	font-family: 'Tw Cen MT Condensed';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Tw Cen MT Condensed'), url('TCCM____.woff') format('woff');
 }
 
 
@@ -112,11 +112,22 @@ body {
 
 	overflow: hidden;
 }
-
 img {
 	width: auto;
 	height: 100%;
 }
+.newsLetter {
+	background-color: red;
+}
+.newsLetter h3 {
+	font-family: 'Tw Cen MT Condensed', sans-serif;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
+
+
+
 /*END OF INDEX MOBILE*/
 
 
@@ -130,6 +141,7 @@ img {
 @media screen and (min-width: 1024px) {
 	.displayBox {
 		grid-template-columns: repeat(9, 1fr);
+		grid-auto-rows: auto;
 	}
 	.displayBox div {
 		position: relative;
