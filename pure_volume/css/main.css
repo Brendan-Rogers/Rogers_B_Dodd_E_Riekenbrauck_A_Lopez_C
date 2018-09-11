@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
 @font-face {
 font-family: 'Tw Cen MT Condensed';
 font-style: normal;
@@ -38,8 +37,6 @@ body {
 	grid-template-rows: 2fr;
 	grid-gap: 0;
 }
-
-
 
 .promoVid:hover #buttonLeft{
 	visibility: visible;
@@ -118,8 +115,6 @@ body {
 	grid-column-start: 3;
 }
 
-
-
 /*INDEX MOBILE*/
 #mainHeader {
 	height: 80px;
@@ -151,6 +146,47 @@ body {
 	.displayBox {
 		grid-template-columns: repeat(9, 1fr);
 	}
+
+.displayBox div {
+	position: relative;
+	display: grid;
+	
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-rows: 3fr 1fr 1fr;
+}
+.displayBox img {
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 3;
+	z-index: 0;
+}
+.articleHead {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	justify-self: center;
+	align-self: end;
+
+	font-family: arial, sans-serif;
+	font-weight: bolder;
+	font-size: 5em;
+	color: white;
+	text-align: center;
+	line-height: 0.8;
+
+	z-index: 1;
+}
+.articleSub {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	justify-self: center;
+	align-self: top;
+
+	font-family: arial, sans-serif;
+	font-size: 2em;
+	color: white;
+	text-align: center;
+
+	z-index: 1;
+}
 
 	#box1 {
 		grid-column: 1 / span 4;
