@@ -1,6 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face {
+font-family: 'Tw Cen MT Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Condensed'), url('TCCM____.woff') format('woff');
+}
+
+
 /*this class will hide elements on our page*/
 .hidden {
 	display: none;
@@ -301,9 +309,9 @@ button{
 #articleContent p{
 	font-size: 20px;
 	text-align: left;
-	line-height: 30px;
-	padding-left: 20px;
-	padding-right: 10px;
+	line-height: 28px;
+	margin-left: 10px;
+	font-weight: 350;
 }
 
 #blurbBox{
