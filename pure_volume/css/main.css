@@ -274,6 +274,23 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ARTICLE PAGE */
 #articleBody{
 	background-color: #ffffff;
@@ -393,11 +410,10 @@ button{
 	grid-column: 1 / span 3;
 }
 #articleContent p{
-	font-size: 20px;
+	font-size: 16px;
 	text-align: left;
 	line-height: 28px;
 	margin-left: 10px;
-	font-weight: 350;
 }
 #blurbBox{
 	position: relative;
@@ -430,6 +446,11 @@ button{
 	margin-bottom: 35px;
 	text-align: center;
 }
+
+.webContentText{
+	display: none;
+}
+
 .contentAd{
 	width: 100%;
 	height: auto;
@@ -493,6 +514,14 @@ button{
 }
 
 @media screen and (min-width: 1024px){
+
+	.webContentText{
+		display: block;
+	}
+
+	.mobileContentText{
+		display: none;
+	}
 
 	#mobileHeader{
 		display: none;
