@@ -46,11 +46,11 @@
         document.getElementById('drake').src='images/desktop_images/drake.png';
         document.getElementById('gucci').src='images/desktop_images/gucci.png';
         document.getElementById('john').src='images/desktop_images/john.png';
-        document.getElementById('niel').src='images/desktop_images/niel.png';
+        document.getElementById('niel').src='images/desktop_images/conan.png';
         document.getElementById('alicia').src='images/desktop_images/alicia.png';
         document.getElementById('star').src='images/desktop_images/star.png';
-        document.getElementById('ryan').src='images/desktop_images/ryan.png';
-        document.getElementById('car').src='images/desktop_images/car.png';
+        document.getElementById('ryan').src='images/desktop_images/fail.png';
+        document.getElementById('car').src='images/desktop_images/casper.png';
         document.getElementById('paul').src='images/desktop_images/paul.png';
         document.getElementById('pump').src='images/desktop_images/pump.png';
         document.getElementById('trippie').src='images/desktop_images/trippie.png';
