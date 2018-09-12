@@ -162,8 +162,9 @@ body {
 	z-index: -1;
 }
 /* HIDDEN BEFORE DESKTOP */
-#art4, #art5, #art10, #art11, #art12{
+#art4, #art5, #art10, #art11, #art12, #tabLand{
 	display: none;
+	visibility: none;
 }
 /*Special Mobile Drake height*/
 #art1 {
@@ -198,6 +199,70 @@ body {
 	width: 30%;
 }
 /*END OF INDEX MOBILE*/
+
+
+/*Mobile LANDSCAPE layout*/
+
+@media screen
+	and (max-width: 768px)
+	and (orientation : landscape) {
+
+	.displayBox {
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-flow: row;
+		grid-row-gap: 5px;
+	}
+	/*remove mobile gutter;*/
+	.artLink {
+		width: 95%;
+	}
+	.artLink h3 {
+		font-size: 0.8em;
+	}
+	.artLink p {
+		font-size: 0.7em;
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+	/* hide mobileBox 's */
+	.mobileBox1, .mobileBox2 {
+		width: 100%;
+		left: 0%;
+		height: 100%;
+	}
+
+	/* reSHOW ARTICLES */
+	#art10, #art11, #tabLand{
+		display: block;
+	}
+	/*undo special DRAKE height*/
+	#art1 {
+		margin-top: 0px;
+	}
+	
+	/* newsLetter Styling */
+	.newsLetter h3 {
+		display: block;
+		font-family: "Arial Black", sans-serif;
+		font-weight: bolder;
+		color: white;
+		text-align: center;
+		font-size: 2.6em;
+		padding-top: 30px;
+	}
+	.newsLetter h4 {
+		font-size: 1.5em;
+	}
+	.newsLetter button {
+		font-size: 1.5em;
+		font-family: arial, sans-serif;
+		margin-bottom: 30px;
+	}
+	.newsLetter input {
+		margin-top: 20px;
+	}
+
+}
 
 
 /* TABLET LAYOUT */
