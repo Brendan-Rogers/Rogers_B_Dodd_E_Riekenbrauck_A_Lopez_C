@@ -490,6 +490,7 @@ body {
 	background-image: url('../images/article_images/mobile/article/drake_banner_article.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	margin-bottom: 35px;
 }
 #contentMainTitle h1{
@@ -591,6 +592,10 @@ body {
 	text-decoration: none;
 }
 
+#webFooterLinks{
+	display: none;
+}
+
 .socialMedia{
 	width: 120px;
 	height: 120px;
@@ -665,44 +670,48 @@ body {
 		background-color: black;
 		height: 121px;
 		margin-bottom: 10px;
+		width: auto;
 	}
 
 	#pureVolumeLogoWeb{
-		width: 400px;
+		width: 30%;
 		height: 70px;
 		margin-top: 27px;
-		margin-left: 30px;
+		margin-left: 1%;
 		float: left;
+		padding: 0;
 	}
 
 	#webHeader ul{
 		float: left;
-		margin-top: 50px;
-		padding-left: 75px;
+		margin-top: 51px;
+		padding:  0 0 0 2%;
+		width: 40%
 	}
 
 	#webHeader ul li{
 		text-decoration: none;
 		display: inline;
-		margin-left: 50px;
+		margin-left: 3px;
 	}
 
 	#webHeader ul li a{
 		color: white;
 		text-decoration: none;
 		font-family: "Tw Cen MT";
-		font-size: 24px;
+		font-size: 18px;
 		font-weight: bold;
+		margin-left: 15px;
 	}
 	#webHeader input{
 		float: right;
-		width: 250px;
+		width: 23%;
 		padding: 5px 5px 5px 8px;
 		height: 15px;
 		border-radius: 8px;
 		border: none;
-		margin-top: 48px;
-		margin-right: 48px;
+		margin-top: 51px;
+		margin-right: 2%;
 
 	}
 
@@ -808,7 +817,34 @@ body {
 	}
 
 	.footer{
-		
+
+	}
+
+	#webFooterLinks{
+		display: block;
+		float: left;
+		margin-bottom: 50px;
+	}
+
+	#webFooterLinks li{
+		display: inline;
+		margin-left: 50px;
+	}
+
+	#webFooterLinks li a{
+		font-family: "Tw Cen MT";
+		font-weight: bold;
+	}
+
+	.socialMedia{
+		width: auto;
+		clear: left;
+		margin-left: 50px;
+	}
+
+	.socialIcon{
+		float: left;
+		padding-left: 15px;
 	}
 
 }
@@ -817,9 +853,23 @@ body {
 	.contentText{
 		width: auto;
 	}
+
+	#webHeader ul li a{
+		margin-left: 25px;
+	}
+}
+
+@media screen and (min-width: 1258px){
+	#webHeader ul li a{
+		margin-left: 35px;
+	}
 }
 
 @media screen and (min-width: 1440px){
+
+	#webHeader ul li a{
+		margin-left: 50px;
+	}
 
 	.articleContentBackground{
 		width: 100%;
