@@ -126,7 +126,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 	line-height: 0.8;
-	color: red;
+	color: #ff0000;
 
 	margin-top: 20px;
 	margin-bottom: 50px;
@@ -171,7 +171,7 @@ body {
 	margin-top: 15px;
 }
 .newsLetter {
-	background-color: red;
+	background-color: #eF0f0f;
 	height: 100%;
 }
 /* does NOT display at Mobile */
@@ -202,7 +202,6 @@ body {
 
 
 /*Mobile LANDSCAPE layout*/
-
 @media screen
 	and (max-width: 768px)
 	and (orientation : landscape) {
@@ -261,7 +260,6 @@ body {
 	.newsLetter input {
 		margin-top: 20px;
 	}
-
 }
 
 
@@ -324,6 +322,7 @@ body {
 }
 /* END of TABLET LAYOUT */
 
+
 /* DESKTOP LAYOUT*/
 @media screen and (min-width: 1024px) {
 	#mainLogo {
@@ -331,6 +330,7 @@ body {
 	}
 	.displayBox {
 		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 0;
 		width: 100%;
 	}
 	.artImg {
