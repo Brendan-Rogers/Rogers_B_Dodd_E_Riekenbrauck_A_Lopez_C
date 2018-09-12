@@ -133,12 +133,31 @@ body {
 }
 .newsLetter {
 	background-color: red;
+	height: 100%;
 }
+/* does NOT display at Mobile */
 .newsLetter h3 {
+	display: none;
+}
+.newsLetter h4 {
 	font-family: 'Tw Cen MT Condensed', sans-serif;
 	text-align: center;
 	font-size: 1.5em;
 	padding-top: 10px;
+}
+.newsLetter input {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 5px 0 5px 5px;
+	width: 70%;
+}
+.newsLetter button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 30%;
 }
 /*END OF INDEX MOBILE*/
 
@@ -163,14 +182,32 @@ body {
 	#art10, #art11 {
 		display: block;
 	}
+	
+	/* newsLetter Styling */
+	.newsLetter h3 {
+		display: block;
+		font-family: arial, sans-serif;
+		font-weight: bolder;
+		color: white;
+		text-align: center;
+		font-size: 2.75em;
+		padding-top: 30px;
+	}
+	.newsLetter h4 {
+		font-size: 1.5em;
+	}
+	.newsLetter button {
+		font-size: 1.5em;
+		font-family: arial, sans-serif;
+		margin-bottom: 30px;
+	}
+	.newsLetter input {
+		margin-top: 20px;
+	}
 }
 /* END of TABLET LAYOUT */
 
-
-
-
-
-/* INDEX DESKTOP*/
+/* DESKTOP LAYOUT*/
 @media screen and (min-width: 1024px) {
 	.displayBox {
 		grid-template-columns: repeat(4, 1fr);
@@ -182,48 +219,79 @@ body {
 	}
 	.artLink {
 		width: 100%;
-
 	}
-
 	#art1 {
 		grid-column: 1 / span 2;
 		content: url(../images/desktop_images/drake.png);
+		-moz-content: url(../images/desktop_images/drake.png);
+		-o-content: url(../images/desktop_images/drake.png);
+		-ms-content: url(../images/desktop_images/drake.png);
+		-webkit-content: url(../images/desktop_images/drake.png);
 	}
 	#art2 {
 		grid-column: 3 / span 1;
 		content: url(../images/desktop_images/gucci.png);
+		-moz-content: url(../images/desktop_images/gucci.png);
+		-o-content: url(../images/desktop_images/gucci.png);
+		-ms-content: url(../images/desktop_images/gucci.png);
+		-webkit-content: url(../images/desktop_images/gucci.png);
 	}
 	#art3 {
 		grid-column: 4 / span 1;
 		content: url(../images/desktop_images/john.png);
+		-moz-content: url(../images/desktop_images/john.png);
+		-o-content: url(../images/desktop_images/john.png);
+		-ms-content: url(../images/desktop_images/john.png);
+		-webkit-content: url(../images/desktop_images/john.png);
 	}
 	#art6 {
 		grid-column: 1 / span 1;
 		content: url(../images/desktop_images/conan.png);
+		-moz-content: url(../images/desktop_images/conan.png);
+		-o-content: url(../images/desktop_images/conan.png);
+		-ms-content: url(../images/desktop_images/conan.png);
+		-webkit-content: url(../images/desktop_images/conan.png);
 	}
 	#art7 {
 		grid-column: 2 / span 1;
 		content: url(../images/desktop_images/alicia.png);
+		-moz-content: url(../images/desktop_images/alicia.png);
+		-o-content: url(../images/desktop_images/alicia.png);
+		-ms-content: url(../images/desktop_images/alicia.png);
+		-webkit-content: url(../images/desktop_images/alicia.png);
 	}
 	#art8 {
 		grid-column: 3 / span 2;
 		content: url(../images/desktop_images/star.png);
+		-moz-content: url(../images/desktop_images/star.png);
+		-o-content: url(../images/desktop_images/star.png);
+		-ms-content: url(../images/desktop_images/star.png);
+		-webkit-content: url(../images/desktop_images/star.png);
 	}
 	#art9 {
 		grid-column: 1 / span 2;
 		content: url(../images/desktop_images/fail.png);
+		-moz-content: url(../images/desktop_images/fail.png);
+		-o-content: url(../images/desktop_images/fail.png);
+		-ms-content: url(../images/desktop_images/fail.png);
+		-webkit-content: url(../images/desktop_images/fail.png);
 	}
 	#art10 {
 		grid-column: 3 / span 1;
-		content: url(../images/desktop_images/casper.png);
+		content: url(../images/desktop_images/casper.png)
+		-moz-content: url(../images/desktop_images/casper.png);
+		-o-content: url(../images/desktop_images/casper.png);
+		-ms-content: url(../images/desktop_images/casper.png);
+		-webkit-content: url(../images/desktop_images/casper.png);
 	}
 	#art11 {
 		grid-column: 4 / span 1;
 		content: url(../images/desktop_images/paul.png);
+		-moz-content: url(../images/desktop_images/paul.png);
+		-o-content: url(../images/desktop_images/paul.png);
+		-ms-content: url(../images/desktop_images/paul.png);
+		-webkit-content: url(../images/desktop_images/paul.png);
 	}
-
-	
-
 	.articleHead {
 		display: none;
 	}
@@ -231,10 +299,29 @@ body {
 		display: none;
 	}
 
+	/* SPECIAL Desktop BONUS ZONE */
+	
+	#desktopRecents {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 0;
+	}
+	#art4 {
+		display: block;
+		grid-column: 1 / span 1;
+	}
+	#art5 {
+		display: block;
+		grid-column: 2 / span 1;
+	}
+	#art12 {
+		grid-column: 3 / span 1;
+	}
+
 
 
 }
-/*END OF INDEX DESKTOP*/
+/*END of DESKTOP LAYOUT*/
 
 
 
