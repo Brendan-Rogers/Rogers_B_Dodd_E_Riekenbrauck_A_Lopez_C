@@ -43,20 +43,31 @@
 
   function reassignImages(x) {
     if (x.matches) { // If media query matches
-        document.getElementById('drake').src='images/desktop_images/drake.png'
-        document.getElementById('gucci').src='images/desktop_images/gucci.png'
-        document.getElementById('john').src='images/desktop_images/john.png'
-        document.getElementById('niel').src='images/desktop_images/niel.png'
-        document.getElementById('alicia').src='images/desktop_images/alicia.png'
-        document.getElementById('star').src='images/desktop_images/star.png'
-        document.getElementById('ryan').src='images/desktop_images/ryan.png'
-        document.getElementById('car').src='images/desktop_images/car.png'
-        document.getElementById('paul').src='images/desktop_images/paul.png'
-        document.getElementById('pump').src='images/desktop_images/pump.png'
-        document.getElementById('trippie').src='images/desktop_images/trippie.png'
-        document.getElementById('tekashi').src='images/desktop_images/tekashi.png'
+        document.getElementById('drake').src='images/desktop_images/drake.png';
+        document.getElementById('gucci').src='images/desktop_images/gucci.png';
+        document.getElementById('john').src='images/desktop_images/john.png';
+        document.getElementById('niel').src='images/desktop_images/niel.png';
+        document.getElementById('alicia').src='images/desktop_images/alicia.png';
+        document.getElementById('star').src='images/desktop_images/star.png';
+        document.getElementById('ryan').src='images/desktop_images/ryan.png';
+        document.getElementById('car').src='images/desktop_images/car.png';
+        document.getElementById('paul').src='images/desktop_images/paul.png';
+        document.getElementById('pump').src='images/desktop_images/pump.png';
+        document.getElementById('trippie').src='images/desktop_images/trippie.png';
+        document.getElementById('tekashi').src='images/desktop_images/tekashi.png';
     } else {
-    
+        document.getElementById('drake').src='images/tablet_images/drake_tablet.png';
+        document.getElementById('gucci').src='images/tablet_images/gucci_tablet.png';
+        document.getElementById('john').src='images/tablet_images/john_tablet.png';
+        document.getElementById('niel').src='images/tablet_images/niel_tablet.png';
+        document.getElementById('alicia').src='images/tablet_images/alicia_tablet.png';
+        document.getElementById('star').src='images/tablet_images/star_tablet.png';
+        document.getElementById('ryan').src='images/tablet_images/ryan_tablet.png';
+        document.getElementById('car').src='images/tablet_images/car_tablet.png';
+        document.getElementById('paul').src='images/tablet_images/paul_tablet.png';
+        document.getElementById('pump').src='images/tablet_images/pump_tablet.png';
+        document.getElementById('trippie').src='images/tablet_images/trippie_tablet.png';
+        document.getElementById('tekashi').src='images/tablet_images/tekashi_tablet.png';
     }
   }
 
