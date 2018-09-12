@@ -10,13 +10,32 @@
 
 <body>
 
-<header id="mainHeader">
-<!-- SECTIONING ELEMENT -->
-<h2 class="hidden">Welcome to PUREVOLUME</h2>
+	<header id="mobileHeader">
+		<h2 class="hidden">Home, Pop Culture Music, Lifestyle, Search</h2>
+		<img src="assets/pureVolumeLogo.svg" alt="PureVolume" id="pureVolumeLogoMobile">
+		<nav id="mobileNav">
+			<a href=""><img src="assets/mobile_nav_svg/entertainment.svg" alt=""></a>
+			<a href=""><img src="assets/mobile_nav_svg/pop_culture.svg" alt=""></a>
+			<a href=""><img src="assets/mobile_nav_svg/music.svg" alt=""></a>
+			<a href=""><img src="assets/mobile_nav_svg/lifestyle.svg" alt=""></a>
+			<a href=""><img src="assets/mobile_nav_svg/search.svg" alt=""></a>
+			<p>Home</p>
+			<p>Pop Culture</p>
+			<p>Music</p>
+			<p>Lifestyle</p>
+			<p>Search</p>
+		</nav>
+	</header>
 
-	<img src="assets/pureVolumeLogo.svg" alt="Pure Volume Logo" id="mainLogo">
-
-</header>
+	<header id="webHeader">
+		<img src="assets/pureVolumeLogo.svg" alt="PureVolume" id="pureVolumeLogoWeb">
+		<ul>
+			<li><a href="">ENTERTAINMENT</a></li>
+			<li><a href="">MUSIC</a></li>
+			<li><a href="">POP CULTURE</a></li>
+		</ul>
+		<input type="text" placeholder="SEARCH">
+	</header>
 
 <main class="wrapper">
 
@@ -69,14 +88,14 @@
 				<p>by: Hive Media</p>
 
 	      	</div>
-    
+
 			<div id="art2" class="artLink">
 				<img src="images/tablet_images/gucci_tablet.png" alt="Picture" class="artImg" id="gucci">
 				<div class="mobileBox2"></div>
 				<h3 class="articleHead">Spice Up your Summer Wardrobe with these Cool Accessories!</h3>
 				<p>by: Hive Media</p>
 			</div>
-			
+
 			<div id="art3" class="artLink">
 				<img src="images/tablet_images/john_tablet.png" alt="Picture" class="artImg" id="john">
 				<div class="mobileBox1"></div>
@@ -90,14 +109,14 @@
 				<h3 class="articleHead">Celebrities Who Fell in Love with a Fan (and Then Got Married!)</h3>
 				<p>by: Hive Media</p>
 			</div>
-    
+
 			<div id="art7" class="artLink">
 	        	<img src="images/tablet_images/alicia_tablet.png" alt="Picture" class="artImg" id="alicia">
 	        	<div class="mobileBox1"></div>
 		        <h3 class="articleHead">Stunning Style Evolution Thorughout the Years</h3>
 				<p>by: Hive Media</p>
 		    </div>
-    
+
 			<div id="art8" class="artLink">
 				<img src="images/tablet_images/star_tablet.png" alt="Picture" class="artImg" id="star">
 				<div class="mobileBox2"></div>
@@ -111,7 +130,7 @@
 				<h3 class="articleHead">HILARIOUSLY Bad Photoshop FAILS That Will Make you CRINGE!</h3>
 				<p>by: Hive Media</p>
 			</div>
-			
+
 			<!-- DOESNT SHOW at MOBILE -->
 			<!-- shows at TABLET and DESKTOP -->
 
@@ -132,7 +151,7 @@
 				<h3 class="articleHead">The Life Story of Paul McCartney</h3>
 				<p>by: Hive Media</p>
 			</div>
-				
+
 			<!-- SPECIAL CASE for LANDSCAPE MOBILE USERS -->
 			<div id="tabLand" class="artLink">
 		        <img src="images/tablet_images/cobain_tablet.png" alt="Picture" class="artImg"dr>
@@ -152,24 +171,24 @@
 				<input type="email" placeholder="YOUR EMAIL ADDRESS">
 				<button name="submit" type="submit" value="submit-true">SIGN UP</button>
 			</form>
-			
+
 		<!-- end newsLetter -->
 		</div>
 
 		<div id="desktopRecents">
- 
+
 			<div id="art4" class="artLink">
 		        <img src="images/desktop_images/pump.png" alt="Picture" class="artImg" id="pump">
 		        <h3 class="articleHead">Kurt Cobain's Complicated Life</h3>
 				<p>by: Hive Media</p>
 		    </div>
-    
+
 			<div id="art5" class="artLink">
 				<img src="images/desktop_images/trippie.png" alt="Picture" class="artImg" id="trippie">
 				<h3 class="articleHead">Lady Gaga DAZZLES with Live Show</h3>
 				<p>by: Hive Media</p>
 			</div>
-			
+
 			<div id="art12" class="artLink">
 				<img src="images/desktop_images/tekashi.png" alt="Picture" class="artImg" id="tekashi">
 				<h3 class="articleHead">The Differences Between GEN-XERs and MILLENNIALS</h3>
@@ -177,19 +196,23 @@
 			</div>
 
 		</div>
-		
+
 
 	</section>
 
 	<footer class="footer">
-		<!-- SECTIONING ELEMENT -->
-	<h2 class="hidden">Footer of Website</h2>
-	  <ul>
+	  <ul id="webContactLinks">
 	    <li><a href="">about</a></li>
 	    <li><a href="">contact</a></li>
 	    <li><a href="">copyright</a></li>
 	    <li><a href="">privacy</a></li>
 	    <li><a href="">terms</a></li>
+	  </ul>
+
+	  <ul id="webFooterLinks">
+	    <li><a href="#">ENTERTAINMENT</a></li>
+	    <li><a href="#">MUSIC</a></li>
+	    <li><a href="#">POP CULTURE</a></li>
 	  </ul>
 
 	  <div class="socialMedia">
