@@ -4,8 +4,15 @@
 	font-family: 'Tw Cen MT Condensed';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Tw Cen MT Condensed'), url('TCCM____.woff') format('woff');
+	src: local('Tw Cen MT Condensed'), url('/assets/fonts/TCCM____.woff') format('woff');
 }
+@font-face {
+	font-family: 'Tw Cen MT';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Tw Cen MT'), url('/assets/fonts/TwCenMTStd.otf') format('woff');
+}
+
 
 
 /*this class will hide elements on our page*/
@@ -537,7 +544,7 @@ body {
 	z-index: -1;
 }
 .contentBlurb{
-	font-family: "Tw Cen MT Condensed", Arial, sans-serif;;
+	font-family: 'Tw Cen MT Condensed', 'Arial Black', sans-serif;;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
@@ -548,7 +555,7 @@ body {
 	margin-bottom: 35px;
 }
 .contentHeading{
-	font-family: "Tw Cen MT Condensed", Arial, sans-serif;;
+	font-family: 'Tw Cen MT Condensed', 'Arial Black', sans-serif;;
 	font-size: 36px;
 	font-weight: bold;
 	padding-top: 20px;
@@ -591,7 +598,7 @@ body {
 }
 
 .footer ul li a{
-	font-family: "Tw Cen MT", Arial, sans-serif;
+	font-family:'Tw Cen MT', 'Arial Black', sans-serif;
 	font-size: 24px;
 	color: #f7f7f7;
 	text-decoration: none;
@@ -814,7 +821,7 @@ body {
 	#webHeader ul li a{
 		color: white;
 		text-decoration: none;
-		font-family: "Tw Cen MT";
+		font-family: 'Tw Cen MT', 'Arial Black', sans-serif;
 		font-size: 18px;
 		font-weight: bold;
 		margin-left: 15px;
@@ -847,7 +854,7 @@ body {
 	}
 
 	#webFooterLinks li a{
-		font-family: "Tw Cen MT";
+		font-family: 'Tw Cen MT', 'Arial Black', sans-serif;
 		font-weight: bold;
 		font-size: 24px;
 	}
