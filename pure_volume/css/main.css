@@ -190,6 +190,7 @@ body {
 		font-weight: bolder;
 		color: white;
 		text-align: center;
+
 		font-size: 2.75em;
 		padding-top: 30px;
 	}
@@ -336,11 +337,28 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ARTICLE PAGE */
 #articleBody{
 	background-color: #ffffff;
 	display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
 }
@@ -351,7 +369,7 @@ body {
 	color: #16161d;
 }
 
-#header{
+#mobileHeader{
 	grid-column: 1 / span 3;
 	background-color: #000000;
 	height: 85px;
@@ -455,11 +473,10 @@ button{
 	grid-column: 1 / span 3;
 }
 #articleContent p{
-	font-size: 20px;
+	font-size: 16px;
 	text-align: left;
 	line-height: 28px;
 	margin-left: 10px;
-	font-weight: 350;
 }
 #blurbBox{
 	position: relative;
@@ -492,6 +509,11 @@ button{
 	margin-bottom: 35px;
 	text-align: center;
 }
+
+.webContentText{
+	display: none;
+}
+
 .contentAd{
 	width: 100%;
 	height: auto;
@@ -543,6 +565,14 @@ button{
 	margin: 5px;
 }
 
+.advertText{
+	display: none;
+}
+
+.articleGallery{
+	display: none;
+}
+
 
 /* Article Media Queries */
 
@@ -554,14 +584,18 @@ button{
 
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 900px){
+
+	.mobileHeader{
+		display: none;
+	}
 
 	#mobileHeader{
 		display: none;
 	}
 
 	#articleContent{
-		grid-column: 1 / span 3;
+		 grid-column: 1 / span 3;
 
 		display: inline-grid;
 	    grid-template-columns: 1fr 2fr 1fr;
@@ -571,6 +605,7 @@ button{
 
 	.articleContentBackground{
 		background-color: #f7f7f7;
+		width: 100%;
 		grid-column: 1 / span 3;
 
 		display: inline-grid;
@@ -588,7 +623,7 @@ button{
 	#contentMainTitle h1{
 		font-size: 60px;
 		text-align: left;
-		padding: 230px 165px 25px 165px;
+		padding: 150px 35px 25px 35px;
 	}
 
 	#contentMainTitle h3{
@@ -598,7 +633,7 @@ button{
 	}
 
 	#contentMainTitle p{
-		margin-left: 215px;
+	  margin-left: 215px;
 		margin-right: 215px;
 	}
 
@@ -606,9 +641,8 @@ button{
 		grid-column: 2 / 3;
 		font-size: 25px;
 		line-height: 45px;
-		padding-left: 5%;
-		padding-right: 5%;
 		padding-bottom: 15px;
+		width: 585px;
 	}
 
 	.contentHeading{
@@ -634,6 +668,50 @@ button{
 		grid-column: 2 / 3;
 	}
 
+	.advertText{
+		grid-column: 2 / span 1;
+		display: inline;
+		font-size: 9px;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	.articleGallery{
+		display: block;
+		grid-column: 1 / span 3;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+
+	.articleGallery img{
+		width: 100%;
+	}
+
 }
 
+@media screen and (min-width: 1090px){
+	.contentText{
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 1440px){
+
+	.articleContentBackground{
+		width: 100%;
+	}
+
+	#contentMainTitle h1{
+		text-align: center;
+		padding-left: 350px;
+		padding-right: 350px;
+	}
+
+	#contentMainTitle h3{
+		text-align: center;
+		padding-left: 0;
+	}
+
+}
 /*END OF ARTICLE PAGE*/
