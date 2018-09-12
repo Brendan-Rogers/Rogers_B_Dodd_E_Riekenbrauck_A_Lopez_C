@@ -522,6 +522,11 @@ body {
 #blurbBox{
 	position: relative;
 }
+
+#blurbBox h2{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
 #greyBox{
 	position: absolute;
 	width: 230px;
@@ -570,7 +575,7 @@ body {
 	display: block;
 	background-color: #000;
 	height: 185px;
-	margin-top: 70px;
+	margin-top: 35px;
 	padding-bottom: 45px;
 }
 
@@ -660,64 +665,6 @@ body {
 
 @media screen and (min-width: 900px){
 
-	.mobileHeader{
-		display: none;
-	}
-
-	#webHeader{
-		display: block;
-		grid-column: 1 / span 3;
-		background-color: black;
-		height: 121px;
-		margin-bottom: 10px;
-		width: auto;
-	}
-
-	#pureVolumeLogoWeb{
-		width: 30%;
-		height: 70px;
-		margin-top: 27px;
-		margin-left: 1%;
-		float: left;
-		padding: 0;
-	}
-
-	#webHeader ul{
-		float: left;
-		margin-top: 51px;
-		padding:  0 0 0 2%;
-		width: 40%
-	}
-
-	#webHeader ul li{
-		text-decoration: none;
-		display: inline;
-		margin-left: 3px;
-	}
-
-	#webHeader ul li a{
-		color: white;
-		text-decoration: none;
-		font-family: "Tw Cen MT";
-		font-size: 18px;
-		font-weight: bold;
-		margin-left: 15px;
-	}
-	#webHeader input{
-		float: right;
-		width: 23%;
-		padding: 5px 5px 5px 8px;
-		height: 15px;
-		border-radius: 8px;
-		border: none;
-		margin-top: 51px;
-		margin-right: 2%;
-
-	}
-
-	#mobileHeader{
-		display: none;
-	}
 
 	#articleContent{
 		 grid-column: 1 / span 3;
@@ -817,7 +764,75 @@ body {
 	}
 
 	.footer{
+		height: 160px;
+	}
 
+	.footer ul li a{
+		font-size: 18px;
+	}
+
+
+}
+
+@media screen and (min-width: 1025px){
+
+	.mobileHeader{
+		display: none;
+	}
+
+	#webHeader{
+		display: block;
+		grid-column: 1 / span 3;
+		background-color: black;
+		height: 121px;
+		margin-bottom: 10px;
+		width: auto;
+	}
+
+	#pureVolumeLogoWeb{
+		width: 30%;
+		height: 70px;
+		margin-top: 27px;
+		margin-left: 1%;
+		float: left;
+		padding: 0;
+	}
+
+	#webHeader ul{
+		float: left;
+		margin-top: 51px;
+		padding:  0 0 0 2%;
+		width: 40%
+	}
+
+	#webHeader ul li{
+		text-decoration: none;
+		display: inline;
+		margin-left: 3px;
+	}
+
+	#webHeader ul li a{
+		color: white;
+		text-decoration: none;
+		font-family: "Tw Cen MT";
+		font-size: 18px;
+		font-weight: bold;
+		margin-left: 15px;
+	}
+	#webHeader input{
+		float: right;
+		width: 23%;
+		padding: 5px 5px 5px 8px;
+		height: 15px;
+		border-radius: 8px;
+		border: none;
+		margin-top: 51px;
+		margin-right: 2%;
+
+	}
+
+	#mobileHeader{
+		display: none;
 	}
 
 	#webFooterLinks{
@@ -834,19 +849,20 @@ body {
 	#webFooterLinks li a{
 		font-family: "Tw Cen MT";
 		font-weight: bold;
+		font-size: 24px;
 	}
 
 	.socialMedia{
 		width: auto;
 		clear: left;
 		margin-left: 50px;
+		height: 100px;
 	}
 
 	.socialIcon{
 		float: left;
 		padding-left: 15px;
 	}
-
 }
 
 @media screen and (min-width: 1090px){
