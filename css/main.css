@@ -165,6 +165,7 @@ body {
 .newsLetter {
 	background-color: #eF0f0f;
 	height: 100%;
+	text-align: center;
 }
 /* does NOT display at Mobile */
 .newsLetter h3 {
@@ -177,18 +178,26 @@ body {
 	padding-top: 10px;
 }
 .newsLetter input {
-	display: block;
+	display: inline;
 	margin: 0 auto;
 	margin-top: 10px;
-	padding: 5px 0 5px 5px;
+	padding: 7px 0 7px 7px;
 	width: 70%;
+	height: 20px;
 }
 .newsLetter button {
-	display: block;
-	margin: 0 auto;
-	margin-top: 10px;
+	/* display: block; */
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 12px;
 	margin-bottom: 15px;
-	width: 30%;
+	margin-left: 8px;
+	width: 40%;
+	height: 20%;
+	background-color: #292929;
+	border: none;
+	padding: 3px 0 3px 3px;
 }
 /*END OF INDEX MOBILE*/
 
@@ -305,12 +314,15 @@ body {
 		font-size: 1.5em;
 	}
 	.newsLetter button {
-		font-size: 1.5em;
+		font-size: 1em;
 		font-family: arial, sans-serif;
 		margin-bottom: 30px;
+		width: 15%;
+		padding: 10px 3px 8px 3px;
 	}
 	.newsLetter input {
 		margin-top: 20px;
+		width: 30%;
 	}
 }
 /* END of TABLET LAYOUT */
@@ -524,6 +536,13 @@ body {
 		grid-row: 3 / span 1;
 	}
 
+	.newsLetter button {
+		width: 12%;
+	}
+	.newsLetter input {
+		width: 24%;
+	}
+
 	/* SPECIAL Desktop BONUS ZONE */
 
 	#desktopRecents {
@@ -677,7 +696,7 @@ body {
 	z-index: -1;
 }
 .contentBlurb{
-	font-family: 'Tw Cen MT Condensed', 'Arial Black', sans-serif;;
+	font-family: 'Arial Black', sans-serif;;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
@@ -688,7 +707,7 @@ body {
 	margin-bottom: 35px;
 }
 .contentHeading{
-	font-family: 'Tw Cen MT Condensed', 'Arial Black', sans-serif;;
+	font-family: 'Arial Black', sans-serif;;
 	font-size: 36px;
 	font-weight: bold;
 	padding-top: 20px;
@@ -731,7 +750,7 @@ body {
 }
 
 .footer ul li a{
-	font-family:'Tw Cen MT', 'Arial Black', sans-serif;
+	font-family: 'Arial Black', sans-serif;
 	font-size: 24px;
 	color: #f7f7f7;
 	text-decoration: none;
@@ -948,16 +967,14 @@ body {
 	#webHeader ul li{
 		text-decoration: none;
 		display: inline;
-		margin-left: 3px;
 	}
 
 	#webHeader ul li a{
 		color: white;
 		text-decoration: none;
-		font-family: 'Tw Cen MT', 'Arial Black', sans-serif;
+		font-family: 'Arial Black', sans-serif;
 		font-size: 18px;
-		font-weight: bold;
-		margin-left: 15px;
+		margin-left: 4px;
 	}
 	#webHeader input{
 		float: right;
@@ -987,7 +1004,7 @@ body {
 	}
 
 	#webFooterLinks li a{
-		font-family: 'Tw Cen MT', 'Arial Black', sans-serif;
+		font-family: 'Arial Black', sans-serif;
 		font-weight: bold;
 		font-size: 24px;
 	}
@@ -1011,7 +1028,7 @@ body {
 	}
 
 	#webHeader ul li a{
-		margin-left: 25px;
+		margin-left: 15px;
 	}
 }
 
