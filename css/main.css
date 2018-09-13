@@ -333,10 +333,39 @@ body {
 	#mainLogo {
 		margin-left: 40px;
 	}
+
+	.indexBody {
+		 animation: colorchange 20s;
+		 -webkit-animation: colorchange 20s; /* Chrome and Safari */
+		 animation-iteration-count: infinite;
+}
+
+    @keyframes colorchange
+    {
+      0%   {background: #660000;}
+      20%  {background: #660033;}
+      40%  {background: #660066;}
+      60%  {background: #6600CC;}
+      80% {background: #6600FF;}
+			100% {background: #663333;}
+    }
+
+		@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+	{
+		0%   {background: #660000;}
+		20%  {background: #660033;}
+		40%  {background: #660066;}
+		60%  {background: #6600CC;}
+		80% {background: #6600FF;}
+		100% {background: #663333;}
+	}
+
+
 	.displayBox {
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 0;
 		width: 100%;
+
 	}
 	.promoVid:hover #buttonLeft{
 		visibility: visible;
@@ -385,7 +414,7 @@ body {
 		grid-template-rows: 3fr 1fr 1fr;
 	}
 
-	
+
 	/* SMALL Articles */
 	#art2 {
 		display: grid;
@@ -442,7 +471,7 @@ body {
 	    transition: opacity 400ms linear;
 	}
 
-	
+
 	/* BIG Articles */
 	#art1 .articleHead, #art9 .articleHead, #art8 .articleHead {
 		display: block;
@@ -459,13 +488,13 @@ body {
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
 		justify-self: center;
-		align-self: center;	
+		align-self: center;
 		opacity: 0;
 		transition: opacity 400ms linear;
 		color: white;
 		font-size: 0.8em;
 	}
-	
+
 
 	/* SMALL Articles */
 	#art2 p, #art7 p, #art10 p {
@@ -473,7 +502,7 @@ body {
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
 		justify-self: center;
-		align-self: center;	
+		align-self: center;
 
 		opacity: 0;
 		transition: opacity 400ms linear;
@@ -486,10 +515,10 @@ body {
 		grid-row: 1 / 2;
 		justify-self: center;
 		align-self: end;
-		
+
 		opacity: 0;
 		transition: opacity 400ms linear;
-		font-size: 1.2em;	
+		font-size: 1.2em;
 	}
 
 
@@ -566,7 +595,50 @@ body {
 	#art1 {
 		margin-top: 0px;
 	}
+
+	.animate {
+	  -webkit-animation-duration: 5s;
+	  animation-duration: .5s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+	.fadeInDown {
+	  -webkit-animation-name: fadeInDown;
+	  animation-name: fadeInDown;
+	 }
+
+	@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	}
+
+	.one {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+	}
+
+	.two {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
 }
+
+.three {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+}
+
+
+
+
 /*END of DESKTOP LAYOUT*/
 
 
@@ -946,6 +1018,10 @@ body {
 		height: 121px;
 		margin-bottom: 10px;
 		width: auto;
+		position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 20;
 	}
 
 	#pureVolumeLogoWeb{
