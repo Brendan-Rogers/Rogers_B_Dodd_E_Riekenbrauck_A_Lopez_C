@@ -31,7 +31,6 @@ body {
 }
 
 
-
 /*VIDEO*/
 .promoVid {
 	width: 100%;
@@ -134,6 +133,9 @@ body {
 	margin-bottom: 50px;
 
 	z-index: 2;
+}
+.artLink p span {
+	color: white;
 }
 .artImg {
 	width: 100%;
@@ -292,7 +294,7 @@ body {
 	}
 	/*remove mobile gutter;*/
 	.artLink {
-		width: 95%;
+		width: 100%;
 	}
 	.artLink h3 {
 		font-size: 0.8em;
@@ -348,6 +350,10 @@ body {
 }
 /* END of TABLET LAYOUT */
 
+#webHeader ul li a {
+	color: red;
+}
+
 
 /* DESKTOP LAYOUT*/
 @media screen and (min-width: 1024px) {
@@ -368,10 +374,10 @@ body {
       40%  {background: #660066;}
       60%  {background: #6600CC;}
       80% {background: #6600FF;}
-			100% {background: #663333;}
+	  100% {background: #663333;}
     }
 
-		@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+	@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
 	{
 		0%   {background: #660000;}
 		20%  {background: #660033;}
@@ -380,6 +386,8 @@ body {
 		80% {background: #6600FF;}
 		100% {background: #663333;}
 	}
+
+
 
 
 	.displayBox {
@@ -415,6 +423,15 @@ body {
 	}
 	.artLink p {
 		display: none;
+	}
+
+	#webHeader ul li a {
+		color: white;
+		transition: color 200ms linear;
+	}
+
+	#webHeader ul li a:hover {
+		color: red;
 	}
 
 	/* BIG Articles */
@@ -638,22 +655,22 @@ body {
 	}
 
 	.one {
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+		-moz-animation-delay: 1s;
+		animation-delay: 1s;
 	}
 
 	.two {
--webkit-animation-delay: 1.5s;
--moz-animation-delay: 1.5s;
-animation-delay: 1.5s;
-}
+		-webkit-animation-delay: 1.5s;
+		-moz-animation-delay: 1.5s;
+		animation-delay: 1.5s;
+	}
 
-.three {
--webkit-animation-delay: 2s;
--moz-animation-delay: 2s;
-animation-delay: 2s;
-}
+	.three {
+		-webkit-animation-delay: 2s;
+		-moz-animation-delay: 2s;
+		animation-delay: 2s;
+	}
 
 }
 
@@ -1067,7 +1084,6 @@ animation-delay: 2s;
 	}
 
 	#webHeader ul li a{
-		color: white;
 		text-decoration: none;
 		font-family: 'Arial Black', sans-serif;
 		font-size: 18px;
