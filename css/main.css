@@ -157,7 +157,6 @@ body {
 /* HIDDEN BEFORE DESKTOP */
 #art4, #art5, #art10, #art11, #art12, #tabLand{
 	display: none;
-	visibility: none;
 }
 /*Special Mobile Drake height*/
 #art1 {
@@ -166,6 +165,7 @@ body {
 .newsLetter {
 	background-color: #eF0f0f;
 	height: 100%;
+	text-align: center;
 }
 /* does NOT display at Mobile */
 .newsLetter h3 {
@@ -185,9 +185,9 @@ body {
 	width: 70%;
 }
 .newsLetter button {
-	display: block;
+	/* display: block; */
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 12px;
 	margin-bottom: 15px;
 	width: 30%;
 }
