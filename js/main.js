@@ -2,6 +2,8 @@
 (() => {
   console.log("Linked");
 
+
+
   // VARIABLE STACK
   let play = document.querySelector('.play'),
       pause = document.querySelector('.pause'),
@@ -88,6 +90,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
         // apply MOBILE VIDEO to bannerVid
         // bannerVid.src='/videos/pureVolume_mobile.mp4';
         console.log("changed video to MOBILE");
+        console.log(window.screenY);
         
     } else if (window.matchMedia("(min-width: 768px)").matches && window.matchMedia("(max-width: 1024px)").matches) {
         // apply TABLET VIDEO to bannerVid
@@ -96,7 +99,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 
     } else if (window.matchMedia("(min-width: 1024px)").matches) {
         // apply DESKTOP VIDEO to bannerVid
-        // bannerVid.src='/videos/pureVolume_desktop'
+        // bannerVid.src='/videos/pureVolume_desktop.mp4'
         console.log("changed video to DESKTOP");
 
     } else {
@@ -105,6 +108,16 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     }
 
 
+ }
+
+ function scrollHeader() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 50) {
+        document.querySelector(".opacitySwap").style.backgroundColor = "rgba(0, 0, 0, 1)";
+        console.log("Beyond");
+    } else {
+        document.querySelector(".opacitySwap").style.backgroundColor = "rgba(0, 0, 0, 0)";       
+        console.log("Returned");
+    }
  }
 
 
@@ -118,6 +131,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   mute.addEventListener('click', muted);
   desktopQ.addListener(reassignImages);
   window.addEventListener('resize', videoResize);
+  window.addEventListener("scroll", scrollHeader);
   vidThumb.addEventListener('click', loadVid);
 
 })();
