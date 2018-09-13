@@ -178,18 +178,26 @@ body {
 	padding-top: 10px;
 }
 .newsLetter input {
-	display: block;
+	display: inline;
 	margin: 0 auto;
 	margin-top: 10px;
-	padding: 5px 0 5px 5px;
+	padding: 7px 0 7px 7px;
 	width: 70%;
+	height: 20px;
 }
 .newsLetter button {
 	/* display: block; */
-	margin: 0 auto;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	color: #fff;
 	margin-top: 12px;
 	margin-bottom: 15px;
-	width: 30%;
+	margin-left: 8px;
+	width: 40%;
+	height: 20%;
+	background-color: #292929;
+	border: none;
+	padding: 3px 0 3px 3px;
 }
 /*END OF INDEX MOBILE*/
 
@@ -306,12 +314,15 @@ body {
 		font-size: 1.5em;
 	}
 	.newsLetter button {
-		font-size: 1.5em;
+		font-size: 1em;
 		font-family: arial, sans-serif;
 		margin-bottom: 30px;
+		width: 15%;
+		padding: 10px 3px 8px 3px;
 	}
 	.newsLetter input {
 		margin-top: 20px;
+		width: 30%;
 	}
 }
 /* END of TABLET LAYOUT */
@@ -389,6 +400,13 @@ body {
 	}
 	.artLink p {
 		display: none;
+	}
+
+	.newsLetter button {
+		width: 12%;
+	}
+	.newsLetter input {
+		width: 24%;
 	}
 
 	/* SPECIAL Desktop BONUS ZONE */
