@@ -430,13 +430,13 @@ body {
 		opacity: 1;
 	}
 	#art1:hover img, #art2:hover img, #art4:hover img, #art5:hover img, #art7:hover img, #art8:hover img, #art9:hover img, #art10:hover img, #art12:hover img {
-		filter:grayscale(100%);
+		filter: blur(4px);
 		opacity: 0.28;
 	}
 	#art1 img, #art9 img, #art8 img, #art2 img, #art7 img, #art10 img, #art4 img, #art5 img, #art12 img{
 		grid-column: 1 / span 3;
 		grid-row: 1 / span 3;
-	    filter: grayscale(0);
+	    filter: blur(0);
 	    opacity: 1;
 	    transition: filter 400ms linear;
 	    transition: opacity 400ms linear;
