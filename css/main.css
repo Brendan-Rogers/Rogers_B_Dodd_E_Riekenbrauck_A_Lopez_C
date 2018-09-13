@@ -367,7 +367,7 @@ body {
 		 animation-iteration-count: infinite;
 }
 
-    @keyframes colorchange
+    /* @keyframes colorchange
     {
       0%   {background: #660000;}
       20%  {background: #660033;}
@@ -377,7 +377,7 @@ body {
 	  100% {background: #663333;}
     }
 
-	@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+	@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate
 	{
 		0%   {background: #660000;}
 		20%  {background: #660033;}
@@ -385,7 +385,7 @@ body {
 		60%  {background: #6600CC;}
 		80% {background: #6600FF;}
 		100% {background: #663333;}
-	}
+	} */
 
 
 
@@ -616,6 +616,7 @@ body {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 0;
+		height: 100%;
 	}
 	#art4 {
 		display: block;
@@ -1107,7 +1108,7 @@ body {
 	#webFooterLinks{
 		display: block;
 		float: left;
-		margin-bottom: 50px;
+		margin-bottom: 35px;
 	}
 
 	#webFooterLinks li{
@@ -1126,11 +1127,15 @@ body {
 		transition: all .3s;
 	}
 
+	.footer{
+		height: 130px;
+	}
+
 	.socialMedia{
 		width: auto;
 		clear: left;
 		margin-left: 50px;
-		height: 100px;
+		height: 70px;
 	}
 
 	.socialIcon{
