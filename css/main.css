@@ -497,10 +497,20 @@ body {
 	.promoVid {
 		grid-template-columns: 1fr 50px 50px;
 	}
+
+	.articleHead {
+		display: block;
+	}
+
+	.artLink p {
+		display: block;
+	}
+
 	#art1 {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 1;
 	}
+
 	#art2 {
 		grid-column: 3 / span 1;
 		grid-row: 1 / span 1;
@@ -536,12 +546,6 @@ body {
 		grid-row: 3 / span 1;
 	}
 
-	.newsLetter button {
-		width: 12%;
-	}
-	.newsLetter input {
-		width: 24%;
-	}
 
 	/* SPECIAL Desktop BONUS ZONE */
 
@@ -600,6 +604,9 @@ body {
 
 
 /* ARTICLE PAGE */
+
+
+
 #articleBody{
 	background-color: #ffffff;
 	display: grid;
@@ -976,6 +983,12 @@ body {
 		font-size: 18px;
 		margin-left: 4px;
 	}
+
+	#webHeader ul li a:hover{
+		color: red;
+		transition: all .3s;
+	}
+
 	#webHeader input{
 		float: right;
 		width: 23%;
@@ -995,7 +1008,7 @@ body {
 	#webFooterLinks{
 		display: block;
 		float: left;
-		margin-bottom: 50px;
+		margin-bottom: 25px;
 	}
 
 	#webFooterLinks li{
@@ -1009,16 +1022,31 @@ body {
 		font-size: 24px;
 	}
 
+	.footer{
+		padding-bottom: 15px;
+	}
+
+	.footer ul li a:hover{
+		color: red;
+		transition: all .3s;
+	}
+
 	.socialMedia{
 		width: auto;
 		clear: left;
 		margin-left: 50px;
-		height: 100px;
+		height: 60px;
 	}
 
 	.socialIcon{
 		float: left;
 		padding-left: 15px;
+		filter: grayscale(100%);
+	}
+
+	.socialIcon:hover{
+		filter: grayscale(0%);
+		transition: all .3s;
 	}
 }
 
