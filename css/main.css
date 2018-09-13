@@ -283,6 +283,10 @@ body {
 		display: block;
 	}
 
+	.hidden {
+		display: none;
+	}
+
 	#vidThumb {
 		display: none;
 	}
