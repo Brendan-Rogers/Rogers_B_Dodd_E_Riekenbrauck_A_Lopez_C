@@ -484,13 +484,13 @@ body {
 
 
 
-	#art1: .articleHead, #art2: .articleHead, #art4: .articleHead, #art5: .articleHead, #art7: .articleHead, #art8: .articleHead, #art9: .articleHead, #art10: .articleHead, #art12: .articleHead {
+	#art1:hover .articleHead, #art2:hover .articleHead, #art4:hover .articleHead, #art5:hover .articleHead, #art7:hover .articleHead, #art8:hover .articleHead, #art9:hover .articleHead, #art10:hover .articleHead, #art12:hover .articleHead {
 		opacity: 1;
 	}
-	#art1: p, #art2: p, #art4: p, #art5: p, #art7: p, #art8: p, #art9: p, #art10: p, #art12: p {
+	#art1:hover p, #art2:hover p, #art4:hover p, #art5:hover p, #art7:hover p, #art8:hover p, #art9:hover p, #art10:hover p, #art12:hover p {
 		opacity: 1;
 	}
-	#art1: img, #art2: img, #art4: img, #art5: img, #art7: img, #art8: img, #art9: img, #art10: img, #art12: img {
+	#art1:hover img, #art2:hover img, #art4:hover img, #art5:hover img, #art7:hover img, #art8:hover img, #art9:hover img, #art10:hover img, #art12:hover img {
 		filter:grayscale(100%);
 		opacity: 0.28;
 	}
