@@ -1086,6 +1086,12 @@ body {
 		font-size: 18px;
 		margin-left: 4px;
 	}
+
+	#webHeader ul li a:hover{
+		color: red;
+		transition: all .3s;
+	}
+
 	#webHeader input{
 		float: right;
 		width: 23%;
