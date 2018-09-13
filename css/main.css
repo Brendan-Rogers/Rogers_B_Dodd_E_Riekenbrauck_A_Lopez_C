@@ -1122,6 +1122,11 @@ body {
 		font-size: 24px;
 	}
 
+	#webFooterLinks li a:hover{
+		color: red;
+		transition: all .3s;
+	}
+
 	.socialMedia{
 		width: auto;
 		clear: left;
@@ -1130,8 +1135,14 @@ body {
 	}
 
 	.socialIcon{
+		filter: grayscale(100%);
 		float: left;
 		padding-left: 15px;
+	}
+
+	.socialIcon:hover{
+		filter: grayscale(0%);
+		transition: all .3s;
 	}
 }
 
