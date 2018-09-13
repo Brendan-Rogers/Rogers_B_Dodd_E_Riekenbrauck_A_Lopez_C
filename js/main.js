@@ -29,15 +29,15 @@
 
   function muted(){
 
-    if (bannerVid.volume == 0.0) {
-      bannerVid.volume = 1.0;
-      mute.classList.add('hidden');
-      unmute.classList.remove('hidden');
+    if (bannerVid.muted) {
+      bannerVid.muted = false;
+      mute.classList.remove('hidden');
+      unmute.classList.add('hidden');
     }
     else {
-      bannerVid.volume = 0.0;
-      unmute.classList.add('hidden');
-      mute.classList.remove('hidden');
+      bannerVid.muted = true;
+      unmute.classList.remove('hidden');
+      mute.classList.add('hidden');
     }
   }
 
