@@ -81,6 +81,33 @@
     }
   }
 
+
+function videoResize() {
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+        // apply MOBILE VIDEO to bannerVid
+        // bannerVid.src='/videos/pureVolume_mobile.mp4';
+        console.log("changed video to MOBILE");
+        
+    } else if (window.matchMedia("(min-width: 768px)").matches && window.matchMedia("(max-width: 1024px)").matches) {
+        // apply TABLET VIDEO to bannerVid
+        // bannerVid.src='/videos/pureVolume_tablet.mp4';
+        console.log("changed video to TABLET");
+
+    } else if (window.matchMedia("(min-width: 1024px)").matches) {
+        // apply DESKTOP VIDEO to bannerVid
+        // bannerVid.src='/videos/pureVolume_desktop'
+        console.log("changed video to DESKTOP");
+
+    } else {
+        // a fallback
+        console.log("You do not have a screen!");
+    }
+
+
+ }
+
+
   // call FUNCTIONS
   reassignImages(desktopQ);
 
@@ -90,6 +117,7 @@
   unmute.addEventListener('click', muted);
   mute.addEventListener('click', muted);
   desktopQ.addListener(reassignImages);
+  window.addEventListener('resize', videoResize);
   vidThumb.addEventListener('click', loadVid);
 
 })();
