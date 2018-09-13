@@ -8,7 +8,8 @@
       mute = document.querySelector('.mute'),
       unmute = document.querySelector('.unmute'),
       bannerVid = document.querySelector('.bannerVid'),
-      desktopQ = window.matchMedia("(min-width: 1024px)");
+      desktopQ = window.matchMedia("(min-width: 1024px)"),
+      vidThumb = document.querySelector('#vidThumb');
 
 
   //FUNCTIONS
@@ -40,6 +41,15 @@
       mute.classList.add('hidden');
     }
   }
+
+
+  function loadVid(){
+    vidThumb.classList.add('hiddenMobile');
+    bannerVid.classList.remove('hiddenMobile');
+    unmute.classList.remove('hiddenMobile');
+    pause.classList.remove('hiddenMobile');
+  }
+
 
   function reassignImages(x) {
     if (x.matches) { // If media query matches
@@ -108,5 +118,6 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   mute.addEventListener('click', muted);
   desktopQ.addListener(reassignImages);
   window.addEventListener('resize', videoResize);
+  vidThumb.addEventListener('click', loadVid);
 
 })();
